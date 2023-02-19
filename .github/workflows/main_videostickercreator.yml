@@ -27,7 +27,7 @@ jobs:
           python -m venv venv
           source venv/bin/activate
       
-      - name: Instsll httpstan
+      - name: Install httpstan
         run: python3 -m pip install httpstan
       
       - name: Install dependencies
