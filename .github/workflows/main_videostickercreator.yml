@@ -33,7 +33,8 @@ jobs:
           sudo apt-get install -y build-essential
           sudo apt-get install python3-dev
           sudo apt-get install -y libpq-dev
-          pip3 install psycopg2apt-get install python3-dev
+          pip3 install psycopg2
+          apt-get install python3-dev
 
       - name: Create and start virtual environment
         run: |
