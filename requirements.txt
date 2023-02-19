@@ -1,3 +1,4 @@
+psycopg2-binary
 PyStark>=1.1.5
 git+https://github.com/encode/httpx.git
 emoji>=1.7.0
