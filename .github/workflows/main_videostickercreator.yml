@@ -109,7 +109,6 @@ jobs:
           name: python-app
           files: |
             . 
-            #!venv/
           
           
       - name: 'Deploy to Azure Web App'
