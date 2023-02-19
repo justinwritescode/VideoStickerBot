@@ -26,10 +26,15 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Create and start virtual environment
+      #- name: Create and start virtual environment
+      #  run: |
+       #   python -m venv venv
+      #   source venv/bin/activate
+      
+      - name: install nes-py
         run: |
-          python -m venv venv
-          source venv/bin/activate
+          pip install nes-py
+          pip install Cmake
       
       - name: Install httpstan
         run: python3 -m pip install httpstan
