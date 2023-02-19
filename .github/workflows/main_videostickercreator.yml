@@ -87,6 +87,7 @@ jobs:
       - name: install prerequisites
         run: |
           sudo apt-get update
+          sudo apt-get install libpython3.11-dev
           sudo apt install python3-all-dev
           sudo pip install --upgrade pip
           sudo apt-get install -y build-essential
@@ -97,6 +98,7 @@ jobs:
       - name: apt install python3-dev
         run: |
           sudo apt-get update
+          sudo apt-get install libpython3.11-dev
           sudo apt install python3-all-dev
           sudo apt-get install python3-dev
           #pip install psycopg2-binary
