@@ -36,6 +36,9 @@ jobs:
           sudo apt-get install -y libpq-dev
           #pip3 install psycopg2
           sudo apt-get install python3-dev
+          sudo apt install python3-pip
+          python3 -m pip install -U pip   
+          python3 -m pip install pystan
 
       - name: Create and start virtual environment
         run: |
