@@ -103,6 +103,15 @@ jobs:
           python3 -m pip install -U pip   
           python3 -m pip install pystan
           
+      - name: Create a ZIP file for deployment
+        uses: vimtor/action-zip@v1.1
+        with:
+          name: python-app
+          files: |
+            . 
+            #!venv/
+          
+          
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
@@ -110,3 +119,4 @@ jobs:
           app-name: 'VideoStickerCreator'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5361522BBF5648539B15AFDBD4755C13 }}
+          package: ${{ github.workspace }}/result.zip
