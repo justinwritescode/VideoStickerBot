@@ -33,10 +33,10 @@ jobs:
           sudo apt-get update
           sudo apt install python3-all-dev
           sudo apt-get install -y build-essential
+          sudo apt-get install python3-dev
           sudo apt-get install python3.11-dev
           sudo apt-get install -y libpq-dev
-          sudo apt-get install python3-dev
-          sudo apt install python3.11-pip
+          sudo apt install python3-pip
           python3 -m pip install -U pip   
           python3 -m pip install pystan
 
