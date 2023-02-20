@@ -1,3 +1,11 @@
+python3-all-dev
+python3.11-dev
+pystan
+nes-py
+cmake
+httpstan
+psycopg2-binary
+psycopg2
 PyStark>=1.1.5
 git+https://github.com/encode/httpx.git
 emoji>=1.7.0
